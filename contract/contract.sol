@@ -11,7 +11,7 @@ contract Token {
     uint public deadline;
     uint public overRaisedUnsend = 0;
     uint public backers = 0;
-    uint rate = 2;
+    uint rate = 4;
     uint successcoef = 2;
     uint unreserved = 80;
     uint _durationInMinutes = 0;
