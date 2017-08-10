@@ -124,7 +124,7 @@ contract Token {
                 if (msg.sender.send(_amount / rate)) {
                     balances[owner] += _amount;
                     amountRaised -= _amount;
-                    Transfer(owner, msg.sender, _amount);
+                    Transfer(msg.sender, owner, _amount);
                 } else {
                     balances[msg.sender] = _amount;
                 }
